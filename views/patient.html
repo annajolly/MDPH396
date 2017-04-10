@@ -1,0 +1,36 @@
+<div class="patient">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="col-xs-2">
+          <button type="button" class="btn btn-default" style="width:100%" ng-click="back()">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-xs-8">
+          <h2 class="text-center">{{patient.name}}</h2>
+        </div>
+        <div class="col-xs-2"></div>
+      </div>
+      <div class="col-xs-12">
+        <hr />
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Questionnaire Name</th>
+              <th>Date Completed</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat='questionnaire in patient.questionnaires'>
+              <td>{{questionnaire.name}}</td>
+              <td>{{questionnaire.month}} {{questionnaire.day}}, {{questionnaire.year}}</td>
+              <td><button class='btn btn-maroon' ng-click="viewQuestionnaire(patient, questionnaire)">View</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

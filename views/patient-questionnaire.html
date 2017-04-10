@@ -1,0 +1,94 @@
+<div class="patient-questionnaire">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="col-xs-2">
+          <button type="button" class="btn btn-default" style="width:100%" ng-click="back()">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-xs-8">
+          <h3 class="text-center">{{qp.questionnaire.name}}</h3>
+          <h5 class="text-center">Answered by {{qp.patient.name}} on {{qp.questionnaire.month}} {{qp.questionnaire.day}}, {{qp.questionnaire.year}}</h5>
+        </div>
+        <div class="col-xs-2"></div>
+      </div>
+      <div class="col-xs-12">
+        <hr />
+        <div ng-repeat="questionGroup in questionGroups">
+          <div class="col-xs-1">{{$index+1}}</div>
+          <div class="col-xs-11">
+            <div class="form-group" ng-repeat="q in questionGroup.questions">
+              <div class="col-xs-12">
+                {{q.question}}<span ng-if='q.optional == 1'> (optional)</span>
+              </div>
+              <!--div class="radio col-xs-12">
+                <div ng-if="q.num_options > 6">
+                  <div class="col-xs-12 col-sm-1" ng-repeat="option in q.options">
+                    <label><input type="radio" name='{{q.question}}' ng-model='q.type.answer' value='{{option}}' ng-disabled="!isAnswer({{option}},{{q.answer}})">{{ option }}</label>
+                  </div>
+                </div>
+                <div ng-if="q.num_options <= 6">
+                  <div class="col-xs-12 col-sm-2" ng-repeat="option in q.options">
+                    <label><input type="radio" name='{{q.question}}' ng-model='q.answer' value='{{option}}' ng-disabled="!isAnswer(option,q.answer)">{{ option }}</label>
+                  </div>
+                </div>
+              </div-->
+              <div ng-if="q.type.category == 'Multiple Choice'">
+                <div class="radio col-xs-12">
+                  <div ng-if="q.type.num_options > 6">
+                    <div class="col-xs-12 col-md-1" ng-repeat="option in q.type.options">
+                      <label><input type="radio" name='{{q.question}}' value='{{option}}' ng-model='q.type.answer' ng-disabled="!isAnswer(option,q.type.answer)">{{ option }}</label>
+                    </div>
+                  </div>
+                  <div ng-if="q.type.num_options <= 6">
+                    <div class="col-xs-12 col-md-2" ng-repeat="option in q.type.options">
+                      <label><input type="radio" name='{{q.question}}' value='{{option}}' ng-model='q.type.answer' ng-disabled="!isAnswer(option,q.type.answer)">{{ option }}</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div ng-if="q.type.category == 'Checkboxes'">
+                <div class="checkbox col-xs-12">
+                  <div ng-if="q.type.num_options > 6">
+                    <div class="col-xs-12 col-md-1" ng-repeat="option in q.type.options">
+                      <label><input type="checkbox" name='{{q.question}}' value='{{option}}' ng-model='q.type.answer' ng-disabled="!isAnswer(option,q.type.answer)">{{ option }}</label>
+                    </div>
+                  </div>
+                  <div ng-if="q.type.num_options <= 6">
+                    <div class="col-xs-12 col-md-2" ng-repeat="option in q.type.options">
+                      <label><input type="checkbox" name='{{q.question}}' value='{{option}}' ng-model='q.type.answer' ng-disabled="!isAnswer(option,q.type.answer)">{{ option }}</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div ng-if="q.type.category == 'Dropdown'">
+                <div class="col-xs-12">
+                    <select ng-options="opt in q.type.options" ng-model='q.type.answer' ng-disabled="!isAnswer(option,q.type.answer)"></select>
+                </div>
+              </div>
+              <div ng-if="q.type.category == 'Linear Scale'">
+                <p class="alignleft">{{q.type.options[0]}}</p>
+                <p class="alignright">{{q.type.options[q.type.num_options-1]}}</p>
+                <input type="range" min={{q.type.options[0]}} max={{q.type.options[q.type.num_options-1]}} step="1" ng-model='q.type.answer' disabled></input>
+                <p class="alignleft">{{q.type.minCaption}}</p>
+                <p class="alignright">{{q.type.maxCaption}}</p>
+                <p class="text-center">{{q.type.answer}}</p>
+              </div>
+              <div ng-if="q.type.category == 'Date'">
+                <input type="date" value="q.type.answer" disabled></input>
+              </div>
+              <div ng-if="q.type.category == 'Time'">
+                <input type="time" value="q.type.answer" disabled></input>
+              </div>
+              <div ng-if="q.type.category == 'Short Answer'">
+                <textarea rows = "3" cols = "40" value="{{q.type.answer}}"></textarea>
+              </div>
+              <div class="col-xs-12"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

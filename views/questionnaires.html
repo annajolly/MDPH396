@@ -1,0 +1,64 @@
+<div class="rud">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="col-xs-2">
+          <button type="button" class="btn btn-default" style="width:100%" ng-click="back()">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-xs-8">
+          <h2 class="text-center">Questionnaires</h2>
+        </div>
+        <div class="col-xs-2"></div>
+      </div>
+      <div class="col-xs-12">
+        <h3>My questionnaires</h3>
+        <hr />
+        <div class="alert alert-success alert-dismissable" ng-show="successPublish">
+          <a class="close" data-dismiss="alert" aria-label="close">×</a>
+          <strong>Success!</strong> Your questionnaire was successfully published.
+        </div>
+        <table class="table table-striped">
+          <tbody>
+            <tr ng-repeat="questionnaire in questionnaires" ng-if="questionnaire.created_by == doctorSerNum">
+              <td>{{questionnaire.name}}</td>
+              <td><h5 ng-if='questionnaire.private == 1' style="color:gray">Private</h5>
+              <h5 ng-if='questionnaire.private == 0' style="color:gray">Public</h5></td>
+              <td><h5 ng-if='questionnaire.publish == 1' style="color:gray">Published</h5>
+              <h5 ng-if='questionnaire.publish == 0' style="color:gray">Unpublished</h5></td>
+              <td ng-if='questionnaire.publish == 0'><button class='btn btn-maroon' ng-click='goToEdit(questionnaire.ser_num, questionnaire.name, questionnaire.publish, questionnaire.private)'>Edit</button></td>
+              <td ng-if='questionnaire.publish == 1'><button class='btn btn-maroon' ng-click='goToRead(questionnaire.ser_num, questionnaire.name)'>View</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr />
+      <div class="col-xs-12">
+        <h3>Public questionnaires</h3>
+        <hr />
+        <div class="col-xs-12 leftline" style="margin-bottom:20px">
+          <label>Filter questionnaires by tag:</label>
+          <div class="input-group">
+            <input list="tagList" type="text" class="form-control" ng-model="selectedTag" placeholder="Choose from these tags">
+            <datalist id="tagList">
+              <option ng-repeat="tag in tags track by tag.ser_num">{{tag.name}}</option>
+            </datalist>
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-mr" ng-click="selectTag()">Add</button>
+            </span>
+          </div>
+          <button ng-repeat="t in selectedTags" type="button" class="btn btn-mr btn-sm" ng-click="unselectTag(t)">{{t.name}} &times;</button>
+        </div>
+        <table class="table table-striped">
+          <tbody>
+            <tr ng-repeat="questionnaire in questionnaires" ng-if="questionnaire.private == 0 && questionnaire.created_by != doctorSerNum && (selectedTags.length==0 || hasTag(questionnaire))">
+              <td>{{questionnaire.name}}</td>
+              <td><button class='btn btn-maroon' ng-click='goToRead(questionnaire.ser_num, questionnaire.name)'>View</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

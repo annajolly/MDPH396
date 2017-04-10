@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: jolly.aux
+The style file: plain.bst
+Database file #1: jolly.bib
+You've used 6 entries,
+            2118 wiz_defined-function locations,
+            533 strings with 6039 characters,
+and the built_in function-call counts, 3449 in all, are:
+= -- 284
+> -- 342
+< -- 0
++ -- 137
+- -- 130
+* -- 347
+:= -- 638
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 83
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 61
+empty$ -- 140
+format.name$ -- 130
+if$ -- 633
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 5
+newline$ -- 33
+num.names$ -- 12
+pop$ -- 70
+preamble$ -- 1
+purify$ -- 77
+quote$ -- 0
+skip$ -- 40
+stack$ -- 0
+substring$ -- 130
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 0
+while$ -- 17
+width$ -- 7
+write$ -- 67

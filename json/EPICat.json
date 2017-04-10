@@ -1,0 +1,117 @@
+[
+  {
+    "type": "Frequency Over 4 Weeks",
+    "options": [
+      "Rarely or never",
+      "About once a week",
+      "More than once a week",
+      "About once a day",
+      "More than once a day"
+    ]
+  },
+  {
+    "type": "Frequency Over 4 Weeks - 2",
+    "options": [
+      "Never",
+      "Rarely",
+      "About half the time",
+      "Usually",
+      "Always"
+    ]
+  },
+  {
+    "type": "Urinary control",
+    "options": [
+      "Total control",
+      "Occasional dribbling",
+      "Frequent dribbling",
+      "No urinary control whatsoever"
+    ]
+  },
+  {
+    "type": "Pads",
+    "options": [
+      "None",
+      "1 pad per day",
+      "2 pads per day",
+      "3 or more pads per day"
+    ]
+  },
+  {
+    "type": "Size of problem",
+    "options": [
+      "No problem",
+      "Very small problem",
+      "Small problem",
+      "Moderate problem",
+      "Big problem"
+    ]
+  },
+  {
+    "type": "Number of bowel movements",
+    "options": [
+      "Two or less",
+      "Three to four",
+      "Five or more"
+    ]
+  },
+  {
+    "type": "Rating",
+    "options": [
+      "Very poor to none",
+      "Poor",
+      "Fair",
+      "Good",
+      "Very good"
+    ]
+  },
+  {
+    "type": "Quality of erections",
+    "options": [
+      "None at all",
+      "Not firm enough for any sexual activity",
+      "Firm enough for masturbation and foreplay only",
+      "Firm enough for intercourse"
+    ]
+  },
+  {
+    "type": "Frequency of erections",
+    "options": [
+      "I never had an erection when I wanted one",
+      "I had an erection less than half the time I wanted one",
+      "I had an erection about half the time I wanted one",
+      "I had an erection more than half the time I wanted one",
+      "I had an erection whenever I wanted one"
+    ]
+  },
+  {
+    "type": "Frequency for sexual habits",
+    "options": [
+      "Not at all",
+      "Less than once a week",
+      "About once a week",
+      "Several times a week",
+      "Daily"
+    ]
+  },
+  {
+    "type": "Weight change",
+    "options": [
+      "Gained 10 pounds or more",
+      "Gained less than 10 pounds",
+      "No change in weight",
+      "Lost less than 10 pounds",
+      "Lost 10 pounds or more"
+    ]
+  },
+  {
+    "type": "Satisfaction",
+    "options": [
+      "Extremely dissatisfied",
+      "Dissatisfied",
+      "Uncertain",
+      "Satisfied",
+      "Extremely satisfied"
+    ]
+  }
+]

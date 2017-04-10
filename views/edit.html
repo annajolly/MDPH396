@@ -1,0 +1,138 @@
+<div class="edit">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="col-xs-2">
+          <button type="button" class="btn btn-default" style="width:100%" ng-click="back()">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-xs-8">
+          <h3 class="text-center">{{questionnaire.name}}</h3>
+        </div>
+        <div class="col-xs-2"></div>
+      </div>
+      <div class="col-xs-12">
+        <hr />
+        <div ng-repeat="questionGroup in questionGroups">
+          <div class="col-xs-12">
+            <div class="col-xs-9 col-sm-10">
+              <div class="col-xs-1">{{$index+1}}</div>
+              <div class="col-xs-11">
+                <div class="form-group" ng-repeat="q in questionGroup.questions">
+                  <div class="col-xs-12">
+                    {{q.question}}
+                  </div>
+                  <div ng-if="q.type.category == 'Multiple Choice'">
+                    <div class="radio col-xs-12">
+                      <div ng-if="q.type.num_options > 6">
+                        <div class="col-xs-12 col-md-1" ng-repeat="option in q.type.options">
+                          <label><input type="radio" name='{{q.question}}' value='{{option}}'>{{ option }}</label>
+                        </div>
+                      </div>
+                      <div ng-if="q.type.num_options <= 6">
+                        <div class="col-xs-12 col-md-2" ng-repeat="option in q.type.options">
+                          <label><input type="radio" name='{{q.question}}' value='{{option}}'>{{ option }}</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div ng-if="q.type.category == 'Checkboxes'">
+                    <div class="checkbox col-xs-12">
+                      <div ng-if="q.type.num_options > 6">
+                        <div class="col-xs-12 col-md-1" ng-repeat="option in q.type.options">
+                          <label><input type="checkbox" name='{{q.question}}' value='{{option}}'>{{ option }}</label>
+                        </div>
+                      </div>
+                      <div ng-if="q.type.num_options <= 6">
+                        <div class="col-xs-12 col-md-2" ng-repeat="option in q.type.options">
+                          <label><input type="checkbox" name='{{q.question}}' value='{{option}}'>{{ option }}</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div ng-if="q.type.category == 'Dropdown'">
+                    <div class="col-xs-12">
+                        <select ng-options="opt in q.type.options"></select>
+                    </div>
+                  </div>
+                  <div ng-if="q.type.category == 'Linear Scale'">
+                    <p class="alignleft">{{q.type.options[0]}}</p>
+                    <p class="alignright">{{q.type.options[q.type.num_options-1]}}</p>
+                    <input type="range" min={{q.type.options[0]}} max={{q.type.options[q.type.num_options-1]}} step="1" ng-model='rangeValue'></input>
+                    <p class="alignleft">{{q.type.minCaption}}</p>
+                    <p class="alignright">{{q.type.maxCaption}}</p>
+                    <p class="text-center">{{rangeValue}}</p>
+                  </div>
+                  <div ng-if="q.type.category == 'Date'">
+                    <div class="col-xs-12">
+                      <input type="date" value="2017-01-01" style="margin-top:8px; margin-bottom:8px"></input>
+                    </div>
+                  </div>
+                  <div ng-if="q.type.category == 'Time'">
+                    <div class="col-xs-12">
+                      <input type="time" value="12:00:00" style="margin-top:8px; margin-bottom:8px"></input>
+                    </div>
+                  </div>
+                  <div ng-if="q.type.category == 'Short Answer'">
+                    <div class="col-xs-12">
+                      <textarea rows = "3" cols = "40" placeholder="Short answer here." style="margin-top:8px; margin-bottom:8px"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-xs-12"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-2">
+              <button type='button' class='btn btn-red' style='width:100%' ng-click='deleteGrouping(questionGroup.ser_num)'>Delete</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <hr />
+          <button ng-if='questionnaire.publish == 0' type='button' class='btn btn-mr col-xs-4' ng-click='addQuestionGroups()'>Add new questions</button>
+          <button ng-if='questionnaire.publish == 1' type='button' class='btn btn-mr col-xs-6' ng-click='addQuestionGroups()'>Add new questions</button>
+          <button ng-if='questionnaire.publish == 0' type='button' class='btn btn-maroon col-xs-4' data-toggle="modal" data-target="#publishModal">Publish</button>
+            <!-- Modal -->
+            <div class="modal" id="publishModal" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content col-xs-12">
+                  <div class="modal-header">
+                      <h4>Are you sure you want to publish this questionnaire?</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>You will no longer be able to make any changes to the questionnaire.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-maroon" ng-click="publish(questionnaire)">Publish</button>
+                    <button class="btn" ng-click="cancelPublish()" data-dismiss="modal">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <button ng-if='questionnaire.publish == 0' type='button' class='btn btn-red col-xs-4' data-toggle="modal" data-target="#deleteModal">Delete</button>
+          <button ng-if='questionnaire.publish == 1' type='button' class='btn btn-red col-xs-6' data-toggle="modal" data-target="#deleteModal">Delete</button>
+            <!-- Modal -->
+            <div class="modal" id="deleteModal" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content col-xs-12">
+                  <div class="modal-header">
+                      <h4>Are you sure you want to delete this questionnaire?</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>You will not be able to undo this action.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-maroon" ng-click='deleteQuestionnaire(questionnaire.ser_num)'>Delete</button>
+                    <button class="btn" ng-click="cancelDelete()" data-dismiss="modal">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

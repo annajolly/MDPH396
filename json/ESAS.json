@@ -1,0 +1,112 @@
+[
+  {
+    "class": "ESAS",
+    "categories": [
+      {
+        "category": "ESAS-r",
+        "symptoms": [
+          {
+            "name": "Pain",
+            "questions" : [
+              {
+                "question": "What number best describes your PAIN now, from no pain (0) to worst possible pain (10)?",
+                "type": "Scale (0-10)",
+                "selected": "0"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Tiredness",
+            "questions" : [
+              {
+                "question": "What number best describes your TIREDNESS now, from no tiredness (0) to worst possible tiredness (10)?",
+                "type": "Scale (0-10)",
+                "selected": "0"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Drowsiness",
+            "questions" : [
+              {
+                "question": "What number best describes your DROWSINESS now, from no drowsiness (0) to worst possible drowsiness (10)?",
+                "type": "Scale (0-10)",
+                "selected": "0"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Nausea",
+            "questions" : [
+              {
+                "question": "What number best describes your NAUSEA now, from no nausea (0) to worst possible nausea (10)?",
+                "type": "Scale (0-10)",
+                "selected": "0"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Lack of appetite",
+            "questions" : [
+              {
+                "question": "What number best describes your LACK OF APPETITE now, from no lack of appetite (0) to worst possible lack of appetite (10)?",
+                "type": "Scale (0-10)",
+                "selected": "0"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Shortness of breath",
+            "questions" : [
+              {
+                "question": "What number best describes your SHORTNESS OF BREATH now, from no shortness of breath (0) to worst possible shortness of breath (10)?",
+                "type": "Scale (0-10)",
+                "selected": "0"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Depression",
+            "questions" : [
+              {
+                "question": "What number best describes your DEPRESSION now, from no depression (0) to worst possible depression (10)?",
+                "type": "Scale (0-10)",
+                "selected": "0"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Anxiety",
+            "questions" : [
+              {
+                "question": "What number best describes your ANXIETY now, from no anxiety (0) to worst possible anxiety (10)?",
+                "type": "Scale (0-10)",
+                "selected": "0"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Wellbeing",
+            "questions" : [
+              {
+                "question": "What number best describes your WELLBEING now, from best wellbeing (0) to worst possible wellbeing (10)?",
+                "type": "Scale (0-10)",
+                "selected": "0"
+              }
+            ],
+            "include": false
+          }
+        ]
+      }
+    ],
+    "privateBool": 0
+  }
+]

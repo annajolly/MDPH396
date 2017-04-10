@@ -1,0 +1,259 @@
+<div class="create">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="col-xs-2">
+          <button type="button" class="btn btn-default" style="width:100%; margin-top:5px;" ng-click="back()">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-xs-8">
+          <h2 class="text-center">Create a Questionnaire</h2>
+        </div>
+        <div class="col-xs-2"></div>
+      </div>
+      <div class="col-xs-12">
+        <hr />
+        <form ng-submit='submitQuestionnaire()'>
+          <div class="form-group">
+            <label for="name">Questionnaire name:</label>
+            <input type="text" class="form-control" name="name" ng-model="questionnaireName" placeholder="Enter name" required>
+          </div>
+          <div class="form-group">
+            <label for="private">Would you like to make this questionnaire public or private?</label>
+            <div class="radio col-xs-12">
+              <label>
+                <input type="radio" name="private" value="1" ng-model="questionnairePriv" checked>
+                Private
+              </label>
+            </div>
+            <div class="radio col-xs-12">
+              <label>
+                <input type="radio" name="private" value="0" ng-model="questionnairePriv" required>
+                Public
+              </label>
+            </div>
+          </div>
+          <div>
+            <label>Choose which questions you would like to include:</label>
+            <br>
+            <div class="col-xs-12">
+              <div class="col-xs-4">
+                <button type="button" class="btn btn-maroon col-xs-12" style="width:100%; padding-bottom:20px; margin-bottom:20px; white-space: normal;" ng-click="browse = true; showTags = false;"><br>Browse by library<br><br><i class="fa fa-search fa-5x"></i><br></button>
+              </div>
+              <div class="col-xs-4">
+                <button type="button" class="btn btn-maroon col-xs-12" style="width:100%; padding-bottom:20px; margin-bottom:20px; white-space: normal;" ng-click="showTags = true; browse = false;"><br>Search by tag<br><br><i class="fa fa-tag fa-5x"></i><br></button>
+              </div>
+              <div class="col-xs-4">
+                <button type="button" class="btn btn-maroon col-xs-12" style="width:100%; padding-bottom:20px; margin-bottom:20px; white-space: normal;" ng-click="goToQuestionBank()"><br>Create your own<br><br><i class="fa fa-plus fa-5x"></i><br></button>
+              </div>
+            </div>
+          </div>
+          <div ng-show='browse || showTags'>
+            <div class="col-xs-12 col-sm-6 leftline">
+              <!-- BROWSE -->
+              <div ng-show='browse'>
+                <h5>Click on a library to expand it and view the options.</h5>
+                <div ng-repeat="qLibrary in questionBank | filter: { privateBool : '0'}">
+                  <button type="button" class="btn btn-mr" style="width:100%" ng-click="show1 = !show1">{{ qLibrary.name }}</button>
+                  <div ng-repeat="qCategory in qLibrary.categories" ng-show="show1">
+                    <button type="button" class="btn btn-red" style="width:100%" ng-click="show = !show">{{ qCategory.category }}</button>
+                    <div class="form-group" ng-show="show">
+                      <div class="checkbox" style="color:rgb(88,24,69)">
+                        <label><input type="checkbox" name="checkall" ng-model='check' ng-click="checkAll(qCategory, check)"><b ng-if="!check">Check all</b><b ng-if="check">Uncheck all</b></label>
+                      </div>
+                      <div class="checkbox" ng-repeat="grouping in qCategory.groupings">
+                        <label><input type="checkbox" name="groupings" ng-model='grouping.include'>{{ grouping.name }}</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div ng-repeat="qLibrary in questionBank | filter: { privateBool : '1'} | filter: { created_by: doctorSerNum }">
+                  <button type="button" class="btn btn-mr" style="width:100%" ng-click="show1 = !show1">{{ qLibrary.name }}</button>
+                  <div ng-repeat="qCategory in qLibrary.categories" ng-show="show1">
+                    <button type="button" class="btn btn-red" style="width:100%" ng-click="show = !show">{{ qCategory.category }}</button>
+                    <div class="form-group" ng-show="show">
+                      <div class="checkbox" style="color:rgb(88,24,69)">
+                        <label><input type="checkbox" name="checkall" ng-model='check' ng-click="checkAll(qCategory, check)"><b ng-if="!check">Check all</b><b ng-if="check">Uncheck all</b></label>
+                      </div>
+                      <div class="checkbox" ng-repeat="grouping in qCategory.groupings">
+                        <label><input type="checkbox" name="groupings" ng-model='grouping.include'>{{ grouping.name }}</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- SEARCH BY TAGS -->
+              <div ng-show="showTags">
+                <div class="input-group">
+                  <input list="tagList" type="text" class="form-control" ng-model="selectedTag" placeholder="Choose from these tags">
+                  <datalist id="tagList">
+                    <option ng-repeat="tag in tags track by tag.ser_num">{{tag.name}}</option>
+                  </datalist>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-mr" ng-click="selectTag(); drop = true;">Add</button>
+                  </span>
+                </div>
+                <button ng-repeat="t in selectedTags" type="button" class="btn btn-mr btn-sm" ng-click="unselectTag(t)">{{t.name}} &times;</button>
+                <div ng-show="drop">
+                  <h5>Click on a library to expand it and view the options.</h5>
+                  <div ng-repeat="library in questionBank | filter: { privateBool : '0'}">
+                    <div ng-if="hasTag(library)">
+                      <button type="button" class="btn btn-mr" style="width:100%" ng-click="showCats = !showCats">{{ library.name }}</button>
+                      <div ng-if="hasTag(cat)" ng-repeat="cat in library.categories" ng-show="showCats">
+                        <button type="button" class="btn btn-red" style="width:100%" ng-click="showGroups = !showGroups">{{ cat.category }}</button>
+                        <div class="form-group" ng-show="showGroups">
+                          <div class="checkbox" style="color:rgb(88,24,69)">
+                            <label><input type="checkbox" name="checkall" ng-model='check' ng-click="checkAll(qCategory, check)"><b ng-if="!check">Check all</b><b ng-if="check">Uncheck all</b></label>
+                          </div>
+                          <div class="checkbox" ng-if="hasTag(group)" ng-repeat="group in cat.groupings">
+                            <label><input type="checkbox" name="groups" ng-model='group.include'>{{ group.name }}</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div ng-repeat="library in questionBank | filter: { privateBool : '1'} | filter: { created_by: doctorSerNum }">
+                    <div ng-if="hasTag(library)">
+                      <button type="button" class="btn btn-mr" style="width:100%" ng-click="showCats = !showCats">{{ library.name }}</button>
+                      <div ng-if="hasTag(cat)" ng-repeat="cat in library.categories" ng-show="showCats">
+                        <button type="button" class="btn btn-red" style="width:100%" ng-click="showGroups = !showGroups">{{ cat.category }}</button>
+                        <div class="form-group" ng-show="showGroups">
+                          <div class="checkbox" style="color:rgb(88,24,69)">
+                            <label><input type="checkbox" name="checkall" ng-model='check' ng-click="checkAll(qCategory, check)"><b ng-if="!check">Check all</b><b ng-if="check">Uncheck all</b></label>
+                          </div>
+                          <div class="checkbox" ng-if="hasTag(group)" ng-repeat="group in cat.groupings">
+                            <label><input type="checkbox" name="groups" ng-model='group.include'>{{ group.name }}</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12" ng-show="showSuccess">
+                <div class="alert alert-success alert-dismissable">
+                  <a class="close" data-dismiss="alert" aria-label="close">×</a>
+                  <strong>Success!</strong> Your question was successfully added.
+                </div>
+              </div>
+              <br>
+            <br>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 leftline">
+            <h3 class="text-center">Preview:</h3>
+            <hr />
+            <div class="col-xs-12">
+              <!--<p>As individuals go through treatment for their cancer they sometimes experience different symptoms and side effects. For each question, please check or mark the one box that best describes your experiences over the past 7 days...</p>-->
+              <h4 class="text-center">{{questionnaireName}}</h4>
+
+              <div ng-repeat="qLibrary in questionBank">
+                <div ng-repeat="qCategory in qLibrary.categories">
+                  <div ng-repeat="grouping in qCategory.groupings | filter:{'include' : true}">
+                    <div class="col-xs-12">
+                      <div class="form-group" ng-repeat="q in grouping.questions">
+                        <div class="col-xs-12">
+                          {{q.question}}
+                        </div>
+                        <div ng-if="q.type.category == 'Multiple Choice'">
+                          <div class="radio col-xs-12">
+                            <div ng-if="q.type.num_options > 6">
+                              <div class="col-xs-12 col-md-1" ng-repeat="option in q.type.options">
+                                <input type="radio" name='{{q.question}}' ng-model='q.selected' value='{{option}}'>{{ option }}</input>
+                              </div>
+                            </div>
+                            <div ng-if="q.type.num_options <= 6">
+                              <div class="col-xs-12 col-md-2" ng-repeat="option in q.type.options">
+                                <input type="radio" name='{{q.question}}' ng-model='q.selected' value='{{option}}'>{{ option }}</input>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div ng-if="q.type.category == 'Checkboxes'">
+                          <div class="checkbox col-xs-12">
+                            <div ng-if="q.type.num_options > 6">
+                              <div class="col-xs-12 col-md-1" ng-repeat="option in q.type.options">
+                                <input type="checkbox" name='{{q.question}}' ng-model='q.selected' value='{{option}}'>{{ option }}</input>
+                              </div>
+                            </div>
+                            <div ng-if="q.type.num_options <= 6">
+                              <div class="col-xs-12 col-md-2" ng-repeat="option in q.type.options">
+                                <input type="checkbox" name='{{q.question}}' ng-model='q.selected' value='{{option}}'>{{ option }}</input>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div ng-if="q.type.category == 'Dropdown'">
+                          <div class="col-xs-12">
+                              <select ng-options="opt in q.type.options" ng-model='q.selected'></select>
+                          </div>
+                        </div>
+                        <div ng-if="q.type.category == 'Linear Scale'">
+                          <p class="alignleft">{{q.type.options[0]}}</p>
+                          <p class="alignright">{{q.type.options[q.type.num_options-1]}}</p>
+                          <input type="range" min={{q.type.options[0]}} max={{q.type.options[q.type.num_options-1]}} step="1" ng-model='q.selected'></input>
+                          <p class="alignleft">{{q.type.minCaption}}</p>
+                          <p class="alignright">{{q.type.maxCaption}}</p>
+                          <p class="text-center">{{rangeValue}}</p>
+                        </div>
+                        <div ng-if="q.type.category == 'Date'">
+                          <div class="col-xs-12">
+                            <input type="date" value="2017-01-01" style="margin-top:8px; margin-bottom:8px"></input>
+                          </div>
+                        </div>
+                        <div ng-if="q.type.category == 'Time'">
+                          <div class="col-xs-12">
+                            <input type="time" value="12:00:00" style="margin-top:8px; margin-bottom:8px"></input>
+                          </div>
+                        </div>
+                        <div ng-if="q.type.category == 'Short Answer'">
+                          <div class="col-xs-12">
+                            <textarea rows = "3" cols = "40" placeholder="Short answer here." style="margin-top:8px; margin-bottom:8px"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <hr />
+          <label>Which tags would you like to associate with this questionnaire?</label>
+          <div class="input-group">
+            <input list="tagListQ" type="text" class="form-control" ng-model="selectedQTag" placeholder="Choose from these tags">
+            <datalist id="tagListQ">
+              <option ng-repeat="tag in tags track by tag.ser_num">{{tag.name}}</option>
+            </datalist>
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-mr" ng-click="selectQuestionnaireTag()">Add</button>
+            </span>
+          </div>
+          <button ng-repeat="t in questionnaireTags" type="button" class="btn btn-mr btn-sm" ng-click="unselectQuestionnaireTag(t)">{{t.name}} &times;</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal" id="submitNoTagsModal" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content col-xs-12">
+              <div class="modal-header">
+                  <h4>You did not associate any tags with this questionnaire!</h4>
+              </div>
+              <div class="modal-body">
+                  <p>Please include at least one tag.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-maroon" data-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <button type="submit" class="btn btn-maroon gapontop" style="width:100%">Create Questionnaire</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

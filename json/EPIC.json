@@ -1,0 +1,528 @@
+[
+  {
+    "class": "EPIC",
+    "categories": [
+      {
+        "category": "Urinary Function",
+        "symptoms": [
+          {
+            "name": "Leaking urine",
+            "questions" : [
+              {
+                "question": "Over the past 4 weeks, how often have you leaked urine?",
+                "type": "Frequency Over 4 Weeks",
+                "selected": "Rarely or never"
+              },
+              {
+                "question": "How big a problem, if any, has dripping or leaking urine been for you during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Urinating blood",
+            "questions" : [
+              {
+                "question": "Over the past 4 weeks, how often have you urinated blood?",
+                "type": "Frequency Over 4 Weeks",
+                "selected": "Rarely or never"
+              },
+              {
+                "question": "How big a problem, if any, has bleeding with urination been for you during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Pain or burning with urination",
+            "questions" : [
+              {
+                "question": "Over the past 4 weeks, how often have you had pain or burning with urination?",
+                "type": "Frequency Over 4 Weeks",
+                "selected": "Rarely or never"
+              },
+              {
+                "question": "How big a problem, if any, has pain or burning on urination been for you during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Urinary control",
+            "questions" : [
+              {
+                "question": "Which of the following best describes your urinary control during the last 4 weeks?",
+                "type": "Urinary control",
+                "selected": "Total control"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Pads or adult diapers",
+            "questions" : [
+              {
+                "question": "How many pads or adult diapers per day did you usually use to control leakage during the last 4 weeks?",
+                "type": "Pads",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Weak urine stream or incomplete emptying",
+            "questions" : [
+              {
+                "question": "How big a problem, if any, has weak urine stream or incomplete emptying been for you during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Waking up to urinate",
+            "questions" : [
+              {
+                "question": "How big a problem, if any, has waking up to urinate been for you during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Need to urinate frequently during the day",
+            "questions" : [
+              {
+                "question": "How big a problem, if any, has the need to urinate frequently during the day been for you during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Urinary function",
+            "questions" : [
+              {
+                "question": "Overall, how big a problem has your urinary function been for during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Bowel Habits",
+        "symptoms": [
+          {
+            "name": "Rectal urgency",
+            "questions" : [
+              {
+                "question": "How often have you had rectal urgency (felt like I had to pass stool, but did not) during the last 4 weeks?",
+                "type": "Frequency Over 4 Weeks",
+                "selected": "Rarely or never"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Uncontrolled leakage of stool or feces",
+            "questions" : [
+              {
+                "question": "How often have you had uncontrolled leakage of stool or feces during the last 4 weeks?",
+                "type": "Frequency Over 4 Weeks",
+                "selected": "Rarely or never"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Loose or liquid stools",
+            "questions" : [
+              {
+                "question": "How often have you had stools (bowel movements) that were loose or liquid (no form, watery, mushy) during the last 4 weeks?",
+                "type": "Frequency Over 4 Weeks - 2",
+                "selected": "Never"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Bloody stools",
+            "questions" : [
+              {
+                "question": "How often have you had bloody stools during the last 4 weeks?",
+                "type": "Frequency Over 4 Weeks - 2",
+                "selected": "Never"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Painful bowel movements",
+            "questions" : [
+              {
+                "question": "How often have your bowel movements been painful during the last 4 weeks?",
+                "type": "Frequency Over 4 Weeks - 2",
+                "selected": "Never"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Number of bowel movements",
+            "questions" : [
+              {
+                "question": "How many bowel movements have you had on a typical day during the last 4 weeks?",
+                "type": "Number of bowel movements",
+                "selected": "Two or less"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Crampy pain in abdomen, pelvis or rectum",
+            "questions" : [
+              {
+                "question": "How often have you had crampy pain in your abdomen, pelvis or rectum during the last 4 weeks?",
+                "type": "Frequency Over 4 Weeks",
+                "selected": "Rarely or never"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Urgency to have a bowel movement",
+            "questions" : [
+              {
+                "question": "How big a problem, if any, has urgency to have a bowel movement been for you during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Increased frequency of bowel movements",
+            "questions" : [
+              {
+                "question": "How big a problem, if any, has increased frequency of bowel movements been for you during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Watery bowel movements",
+            "questions" : [
+              {
+                "question": "How big a problem, if any, has watery bowel movements been for you during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Losing control of your stools",
+            "questions" : [
+              {
+                "question": "How big a problem, if any, has losing control of your stools been for you during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Bloody stools",
+            "questions" : [
+              {
+                "question": "How big a problem, if any, has bloody stools been for you during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Abdominal/Pelvic/Rectal pain",
+            "questions" : [
+              {
+                "question": "How big a problem, if any, has abdominal/pelvic/rectal pain been for you during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Bowel habits",
+            "questions" : [
+              {
+                "question": "Overall, how big a problem have your bowel habits been for during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Sexual Function",
+        "symptoms": [
+          {
+            "name": "Sexual desire",
+            "questions" : [
+              {
+                "question": "How would you rate your level of sexual desire during the last 4 weeks?",
+                "type": "Rating",
+                "selected": "Fair"
+              },
+              {
+                "question": "How big a problem during the last 4 weeks, if any, has your level of sexual desire been for you?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Ability to have an erection",
+            "questions" : [
+              {
+                "question": "How would you rate your ability to have an erection during the last 4 weeks?",
+                "type": "Rating",
+                "selected": "Fair"
+              },
+              {
+                "question": "How big a problem during the last 4 weeks, if any, has your ability to have an erection been for you?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Ability to reach orgasm",
+            "questions" : [
+              {
+                "question": "How would you rate your ability to reach orgasm (climax) during the last 4 weeks?",
+                "type": "Rating",
+                "selected": "Fair"
+              },
+              {
+                "question": "How big a problem during the last 4 weeks, if any, has your ability to reach an orgasm been for you?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Quality of erections",
+            "questions" : [
+              {
+                "question": "How would you describe the usual quality of your erections during the last 4 weeks?",
+                "type": "Quality of erections",
+                "selected": "None at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Frequency of erections",
+            "questions" : [
+              {
+                "question": "How would you describe the prequency of your erections during the last 4 weeks?",
+                "type": "Frequency of erections",
+                "selected": "I never had an erection when I wanted one"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Awaken with erection",
+            "questions" : [
+              {
+                "question": "How often have you awakened in the morning or night with an erection during the last 4 weeks?",
+                "type": "Frequency for sexual habits",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Sexual activity frequency",
+            "questions" : [
+              {
+                "question": "During the last 4 weeks, how often did you have sexual activity?",
+                "type": "Frequency for sexual habits",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Sexual intercourse frequency",
+            "questions" : [
+              {
+                "question": "During the last 4 weeks, how often did you have sexual intercourse?",
+                "type": "Frequency for sexual habits",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Ability to function sexually",
+            "questions" : [
+              {
+                "question": "Overall, how would you rate your ability to function sexually during the last 4 weeks?",
+                "type": "Rating",
+                "selected": "Very poor to none"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Sexual function",
+            "questions" : [
+              {
+                "question": "Overall, how big a problem has your sexual function or lack of sexual function been for during the last 4 weeks?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Hormonal Function",
+        "symptoms": [
+          {
+            "name": "Hot flashes",
+            "questions" : [
+              {
+                "question": "Over the last 4 weeks, how often have you experienced hot flashes?",
+                "type": "Frequency Over 4 Weeks",
+                "selected": "Rarely or never"
+              },
+              {
+                "question": "How big a problem during the last 4 weeks, if any, have hot flashes been for you?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Breast tenderness",
+            "questions" : [
+              {
+                "question": "How often have you had breast tenderness during the last 4 weeks?",
+                "type": "Frequency Over 4 Weeks",
+                "selected": "Rarely or never"
+              },
+              {
+                "question": "How big a problem during the last 4 weeks, if any, has breast tenderness/enlargement been for you?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Depression",
+            "questions" : [
+              {
+                "question": "During the last 4 weeks, how often have you felt depressed?",
+                "type": "Frequency Over 4 Weeks",
+                "selected": "Rarely or never"
+              },
+              {
+                "question": "How big a problem during the last 4 weeks, if any, has feeling depressed been for you?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Lack of energy",
+            "questions" : [
+              {
+                "question": "During the last 4 weeks, how often have you felt a lack of energy?",
+                "type": "Frequency Over 4 Weeks",
+                "selected": "Rarely or never"
+              },
+              {
+                "question": "How big a problem during the last 4 weeks, if any, has lack of energy been for you?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Change in weight",
+            "questions" : [
+              {
+                "question": "How much change in your weight have you experienced during the last 4 weeks, if any?",
+                "type": "Weight change",
+                "selected": "No change in weight"
+              },
+              {
+                "question": "How big a problem during the last 4 weeks, if any, has change in body weight been for you?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Loss of body hair",
+            "questions" : [
+              {
+                "question": "How big a problem during the last 4 weeks, if any, has loss of body hair been for you?",
+                "type": "Size of problem",
+                "selected": "No problem"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Overall Satisfaction",
+        "symptoms": [
+          {
+            "name": "Overall satisfaction",
+            "questions" : [
+              {
+                "question": "Overall, how satisfied are you with the treatment you received for your prostate cancer?",
+                "type": "Satisfaction",
+                "selected": "Satisfied"
+              }
+            ],
+            "include": false
+          }
+        ]
+      }
+    ],
+    "privateBool": 0
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "type": "Severity",
+    "options": [
+      "None",
+      "Mild",
+      "Moderate",
+      "Severe",
+      "Very severe"
+    ]
+  },
+  {
+    "type": "SeverityNA",
+    "options": [
+      "None",
+      "Mild",
+      "Moderate",
+      "Severe",
+      "Very severe",
+      "Not applicable"
+    ]
+  },
+  {
+    "type": "SeverityS",
+    "options": [
+      "None",
+      "Mild",
+      "Moderate",
+      "Severe",
+      "Very severe",
+      "Not sexually active",
+      "Prefer not to answer"
+    ]
+  },
+  {
+    "type": "Amount",
+    "options": [
+      "Not at all",
+      "A little bit",
+      "Somewhat",
+      "Quite a bit",
+      "Very much"
+    ]
+  },
+  {
+    "type": "Boolean",
+    "options": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "type": "BooleanNA",
+    "options": [
+      "Yes",
+      "No",
+      "Not applicable"
+    ]
+  },
+  {
+    "type": "BooleanS",
+    "options": [
+      "Yes",
+      "No",
+      "Not sexually active",
+      "Prefer not to answer"
+    ]
+  },
+  {
+    "type": "Frequency",
+    "options": [
+      "Never",
+      "Rarely",
+      "Occasionally",
+      "Frequently",
+      "Almost constantly"
+    ]
+  },
+  {
+    "type": "FrequencyS",
+    "options": [
+      "Never",
+      "Rarely",
+      "Occasionally",
+      "Frequently",
+      "Almost constantly",
+      "Not sexually active",
+      "Prefer not to answer"
+    ]
+  }
+]

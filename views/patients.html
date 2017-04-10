@@ -1,0 +1,38 @@
+<div class="patients">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="col-xs-2">
+          <button type="button" class="btn btn-default" style="width:100%" ng-click="back()">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-xs-8">
+          <h2 class="text-center">My Patients</h2>
+        </div>
+        <div class="col-xs-2"></div>
+      </div>
+      <div class="col-xs-12">
+        <hr />
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Ser_num</th>
+              <th>Patient name</th>
+              <th>Diagnosis</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat='patient in patients'>
+              <td>{{patient.ser_num}}</td>
+              <td>{{patient.name}}</td>
+              <td>{{patient.diagnosis}}</td>
+              <td><button class='btn btn-maroon' ng-click="select(patient)">Select</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

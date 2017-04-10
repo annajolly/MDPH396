@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<link href="css/main.css" rel="stylesheet" />-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">
+    <!-- Include the core AngularJS library -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <!-- Include the AngularJS routing library -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+  </head>
+
+  <style>
+
+  body {
+    font-family: 'Noto Sans', Helvetica;
+    background-color: rgb(245,235,235);
+    color: rgb(99,79,89);
+  }
+
+  .mygroup {
+    display: inline-block;
+  }
+
+  .alignleft {
+  	float: left;
+  }
+
+  .alignright {
+  	float: right;
+  }
+
+  .circle {
+    border-radius: 100%;
+  }
+
+  .mrn-font {
+    color: rgb(88,24,69);
+  }
+
+  .btn-maroon {
+    color: rgb(245,235,235);
+    background-color: rgb(88,24,69);
+    border-color: rgb(245,235,235);
+  }
+  .btn-maroon:hover, .btn-maroon:focus, .btn-maroon:active, .btn-maroon.active, .open>.dropdown-toggle.btn-maroon {
+    color: white;
+    background-color: rgb(144, 12, 63);
+    border-color: rgb(88,24,69);
+  }
+
+  .btn-maroon:focus,.btn-maroon:active {
+     outline: none !important;
+  }
+
+  hr {
+    border-color: rgb(88,24,69);
+  }
+
+  .btn-mr {
+    color: rgb(245,235,235);
+    background-color: rgb(144, 12, 63);
+    border-color: rgb(245,235,235);
+  }
+  .btn-mr:hover, .btn-mr:focus, .btn-mr:active, .btn-mr.active, .open>.dropdown-toggle.btn-mr {
+    color: white;
+    background-color: rgb(199, 0, 57);
+    border-color: rgb(144, 12, 63);
+  }
+
+  .btn-mr:focus,.btn-mr:active {
+     outline: none !important;
+  }
+
+  .btn-red {
+    color: rgb(245,235,235);
+    background-color: rgb(199, 0, 57);
+    border-color: rgb(245,235,235);
+  }
+  .btn-red:hover, .btn-red:focus, .btn-red:active, .btn-red.active, .open>.dropdown-toggle.btn-red {
+    color: white;
+    background-color: rgb(255, 87, 51);
+    border-color: rgb(144, 12, 63);
+  }
+
+  .btn-red:focus,.btn-red:active {
+     outline: none !important;
+  }
+
+  textarea:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="week"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="color"]:focus,
+  .uneditable-input:focus {
+    border-color: rgba(88,24,69, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(88,24,69, 0.6);
+    outline: 0 none;
+  }
+
+  .mygrey {
+    color: rgb(99,79,89);
+  }
+
+  .maroon {
+    background-color: rgb(88,24,69);
+    color: rgb(245,235,235);
+    border-color: rgb(245,235,235);
+  }
+
+  .leftline {
+    border-left: 4px solid rgb(88,24,69);
+  }
+
+  .gapontop {
+    margin-top: 10px;
+  }
+
+  .drop {
+    background-color: rgb(218, 222, 229);
+  }
+
+  </style>
+
+  <body ng-app="QuestionnaireApp">
+
+    <div ng-view></div>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/HomeController.js"></script>
+    <script src="js/controllers/CreateController.js"></script>
+    <script src="js/controllers/QuestionBankController.js"></script>
+    <script src="js/controllers/QuestionnairesController.js"></script>
+    <script src="js/controllers/ReadController.js"></script>
+    <script src="js/controllers/EditController.js"></script>
+    <script src="js/controllers/PatientsController.js"></script>
+    <script src="js/controllers/PatientController.js"></script>
+    <script src="js/controllers/PatientQuestionnaireController.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/questionBank.js"></script>
+    <script src="js/services/answerTypes.js"></script>
+    <script src="js/services/tags.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,1490 @@
+[
+  {
+    "class": "CTCAE",
+    "categories": [
+      {
+        "category": "Oral",
+        "symptoms": [
+          {
+            "name": "Dry mouth",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your DRY MOUTH at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Difficulty swallowing",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your DIFFICULTY SWALLOWING at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Mouth/throat sores",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your MOUTH OR THROAT SORES at their WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did MOUTH OR THROAT SORES INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Cracking at the corners of the mouth (cheilosis/cheilitis)",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of SKIN CRACKING AT THE CORNERS OF YOUR MOUTH at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Voice quality changes",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any VOICE CHANGES?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Hoarseness",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your HOARSE VOICE at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Gastrointestinal",
+        "symptoms": [
+          {
+            "name": "Taste changes",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your PROBLEMS WITH TASTING FOOD OR DRINK at their WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Decreased appetite",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your DECREASED APPETITE at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did DECREASED APPETITE INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Nausea",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have NAUSEA?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your NAUSEA at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Vomiting",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have VOMITING?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your VOMITING at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Heartburn",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have HEARTBURN?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your HEARTBURN at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Gas",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any INCREASED PASSING OF GAS (FLATULENCE)?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Bloating",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have BLOATING OF THE ABDOMEN (BELLY)?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your BLOATING OF THE ABDOMEN (BELLY) at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Hiccups",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have HICCUPS?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your HICCUPS at their WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Constipation",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your CONSTIPATION at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Diarrhea",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have LOOSE OR WATERY STOOLS (DIARRHEA)?",
+                "type": "Frequency",
+                "selected": "Never"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Abdominal pain",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have PAIN IN THE ABDOMEN (BELLY AREA)?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your PAIN IN THE ABDOMEN (BELLY AREA) at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did PAIN IN THE ABDOMEN (BELLY AREA) INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Fecal incontinence",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you LOSE CONTROL OF BOWEL MOVEMENTS?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, how much did LOSS OF CONTROL OF BOWEL MOVEMENTS INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Respiratory",
+        "symptoms": [
+          {
+            "name": "Shortness of breath",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your SHORTNESS OF BREATH at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did your SHORTNESS OF BREATH INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Cough",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your COUGH at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did COUGH INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Wheezing",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your WHEEZING (WHISTLING NOISE IN THE CHEST WITH BREATHING) at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Cardio/Circulatory",
+        "symptoms": [
+          {
+            "name": "Swelling",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have ARM OR LEG SWELLING?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your ARM OR LEG SWELLING at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did ARM OR LEG SWELLING INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Heart palpitations",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you feel a POUNDING OR RACING HEARTBEAT (PALPITATIONS)?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your POUNDING OR RACING HEARTBEAT (PALPITATIONS) at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Cutaneous",
+        "symptoms": [
+          {
+            "name": "Rash",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any RASH?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Skin dryness",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your DRY SKIN at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Acne",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your ACNE OR PIMPLES ON THE FACE OR CHEST at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Hair loss",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any HAIR LOSS?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Itching",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your ITCHY SKIN at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Hives",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any HIVES (ITCHY RED BUMPS ON THE SKIN)?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Hand-foot syndrome",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your HAND-FOOT SYNDROME (A RASH OF THE HANDS OR FEET THAT CAN CAUSE CRACKING, PEELING, REDNESS OR PAIN) at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Nail loss",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you LOSE ANY FINGERNAILS OR TOENAILS?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Nail ridging",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any RIDGES OR BUMPS ON YOUR FINGERNAILS OR TOENAILS?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Nail discoloration",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any CHANGE IN THE COLOR OF YOUR FINGERNAILS OR TOENAILS?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Sensitivity to sunlight",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any INCREASED SKIN SENSIVITY TO SUNLIGHT?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Bed/pressure sores",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any BED SORES?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Radiation skin reaction",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your SKIN BURNS FROM RADIATION at their WORST?",
+                "type": "SeverityNA",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Skin darkening",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any UNUSUAL DARKENING OF THE SKIN?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Stretch marks",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any STRETCH MARKS?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Neurological",
+        "symptoms": [
+          {
+            "name": "Numbness and tingling",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your NUMBNESS OR TINGLING IN YOUR HANDS OR FEET at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did NUMBNESS OR TINGLING IN YOUR HANDS OR FEET INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Dizziness",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your DIZZINESS at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did DIZZINESS INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Visual/Perception",
+        "symptoms": [
+          {
+            "name": "Blurred vision",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your BLURRY VISION at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did BLURRY VISION INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Flashing lights",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any FLASHING LIGHTS IN FRONT OF YOUR EYES?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Visual floaters",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any SPOTS OR LINES (FLOATERS) THAT DRIFT IN FRONT OF YOUR EYES?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Watery eyes",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your WATERY EYES (TEARING) at their WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did WATERY EYES (TEARING) INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Ringing in ears",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of RINGING IN YOUR EARS at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Attention/Memory",
+        "symptoms": [
+          {
+            "name": "Concentration",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your PROBLEMS WITH CONCENTRATION at their WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did PROBLEMS WITH CONCENTRATION INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Memory",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your PROBLEMS WITH MEMORY at their WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did PROBLEMS WITH MEMORY INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Pain",
+        "symptoms": [
+          {
+            "name": "General pain",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have PAIN?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your PAIN at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did PAIN INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Headache",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have a HEADACHE?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your HEADACHE at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did your HEADACHE INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Muscle pain",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have ACHING MUSCLES?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your ACHING MUSCLES at their WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did ACHING MUSCLES INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Joint pain",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have ACHING JOINTS (SUCH AS ELBOWS, KNEES, SHOULDERS)?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your ACHING JOINTS (SUCH AS ELBOWS, KNEES, SHOULDERS) at their WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did ACHING JOINTS (SUCH AS ELBOWS, KNEES, SHOULDERS) INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Sleep/Wake",
+        "symptoms": [
+          {
+            "name": "Insomnia",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your INSOMNIA (INCLUDING DIFFICULTY FALLING ASLEEP, STAYING ASLEEP, OR WAKING UP EARLY) at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did INSOMNIA (INCLUDING DIFFICULTY FALLING ASLEEP, STAYING ASLEEP, OR WAKING UP EARLY) INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Fatigue",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your FATIGUE, TIREDNESS, OR LACK OF ENERGY at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did FATIGUE, TIREDNESS, OR LACK OF ENERGY INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Mood",
+        "symptoms": [
+          {
+            "name": "Anxious",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you feel ANXIETY?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your ANXIETY at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did ANXIETY INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Discouraged",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you FEEL THAT NOTHING COULD CHEER YOU UP?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your FEELINGS THAT NOTHING COULD CHEER YOU UP at their WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did FEELING THAT NOTHING COULD CHEER YOU UP INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Sad",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have SAD OR UNHAPPY FEELINGS?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your SAD OR UNHAPPY FEELINGS at their WORST?",
+                "type": "Severity",
+                "selected": "None"
+              },
+              {
+                "question": "In the last 7 days, how much did SAD OR UNHAPPY FEELINGS INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Gynecologic/Urinary",
+        "symptoms": [
+          {
+            "name": "Irregular periods/vaginal bleeding",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any IRREGULAR MENSTRUAL PERIODS?",
+                "type": "BooleanNA",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Missed expected menstrual period",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you MISS AN EXPECTED MENSTRUAL PERIOD?",
+                "type": "BooleanNA",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Vaginal discharge",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any UNUSUAL VAGINAL DISCHARGE?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Vaginal dryness",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your VAGINAL DRYNESS at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Painful urination",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your PAIN OR BURNING WITH URINATION at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Urinary urgency",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you feel an URGE TO URINATE ALL OF A SUDDEN?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, how much did SUDDEN URGES TO URINATE INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Urinary frequency",
+            "questions": [
+              {
+                "question": "In the last 7 days, were there times when you had to URINATE FREQUENTLY?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, how much did FREQUENT URINATION INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Change in usual urine color",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have any URINE COLOR CHANGE?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Urinary incontinence",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have LOSS OF CONTROL OF URINE (LEAKAGE)?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, how much did LOSS OF CONTROL OF URINE (LEAKAGE) INTERFERE with your usual or daily activities?",
+                "type": "Amount",
+                "selected": "Not at all"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Sexual",
+        "symptoms": [
+          {
+            "name": "Achieve and maintain erection",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your DIFFICULTY GETTING OR KEEPING AN ERECTION at its WORST?",
+                "type": "SeverityS",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Ejaculation",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have EJACULATION PROBLEMS?",
+                "type": "FrequencyS",
+                "selected": "Never"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Decreased libido",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your DECREASED SEXUAL INTEREST at its WORST?",
+                "type": "SeverityS",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Delayed orgasm",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you feel that it TOOK TOO LONG TO HAVE AN ORGASM OR CLIMAX?",
+                "type": "BooleanS",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Unable to have orgasm",
+            "questions": [
+              {
+                "question": "In the last 7 days, were you UNABLE TO HAVE AN ORGASM OR CLIMAX?",
+                "type": "BooleanS",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Pain with sexual intercourse",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your PAIN DURING VAGINAL SEX at its WORST?",
+                "type": "SeverityS",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Miscellaneous",
+        "symptoms": [
+          {
+            "name": "Breast swelling and tenderness",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your BREAST AREA ENLARGEMENT OR TENDERNESS at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Bruising",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you BRUISE EASILY (BLACK AND BLUE MARKS)?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Chills",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have SHIVERING OR SHAKING CHILLS?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your SHIVERING OR SHAKING CHILLS at their WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Increased sweating",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have UNEXPECTED OR EXCESSIVE SWEATING DURING THE DAY OR NIGHTIME (NOT RELATED TO HOT FLASHES)?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your UNEXPECTED OR EXCESSIVE SWEATING DURING THE DAY OR NIGHTIME (NOT RELATED TO HOT FLASHES) at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Decreased sweating",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you have an UNEXPECTED DECREASE IN SWEATING?",
+                "type": "Boolean",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Hot flashes",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have HOT FLASHES?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your HOT FLASHES at their WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Nosebleed",
+            "questions": [
+              {
+                "question": "In the last 7 days, how OFTEN did you have NOSEBLEEDS?",
+                "type": "Frequency",
+                "selected": "Never"
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your NOSEBLEEDS at their WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Pain and swelling at injection site",
+            "questions": [
+              {
+                "question": "In the last 7 days, did you HAVE ANY PAIN, SWELLING, OR REDNESS AT A SITE OF DRUG INJECTION OR IV?",
+                "type": "BooleanNA",
+                "selected": "No"
+              }
+            ],
+            "include": false
+          },
+          {
+            "name": "Body odor",
+            "questions": [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your BODY ODOR at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      }
+    ],
+    "privateBool": 0
+  },
+  {
+    "class": "Extra",
+    "categories": [
+      {
+        "category": "Add",
+        "symptoms": [
+          {
+            "name": "OtherY/N",
+            "questions": [
+              {
+                "question": "Do you have any other symptoms that you wish to report?",
+                "type": "Boolean",
+                "selected": "No"
+              },
+              {
+                "question": "Symptom:",
+                "type": "Text",
+                "selected": ""
+              },
+              {
+                "question": "In the last 7 days, what was the SEVERITY of this symptom at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": true
+          }
+        ]
+      }
+    ],
+    "privateBool": 0
+  },
+  {
+    "class": "Class 2",
+    "categories": [
+      {
+        "category": "Category 1",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Category 2",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Category 3",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Category 4",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      }
+    ],
+    "privateBool": 0
+  },
+  {
+    "class": "Class 3",
+    "categories": [
+      {
+        "category": "Category 1",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Category 2",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Category 3",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Category 4",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      }
+    ],
+    "privateBool": 0
+  },
+  {
+    "class": "Class 4",
+    "categories": [
+      {
+        "category": "Category 1",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Category 2",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Category 3",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Category 4",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      }
+    ],
+    "privateBool": 0
+  },
+  {
+    "class": "Class 5",
+    "categories": [
+      {
+        "category": "Category 1",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Category 2",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Category 3",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      },
+      {
+        "category": "Category 4",
+        "symptoms": [
+          {
+            "name": "Example symptom 1",
+            "questions" : [
+              {
+                "question": "In the last 7 days, what was the SEVERITY of your EXAMPLE SYMPTOM 1 at its WORST?",
+                "type": "Severity",
+                "selected": "None"
+              }
+            ],
+            "include": false
+          }
+        ]
+      }
+    ],
+    "privateBool": 0
+  }
+]
