@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "QuestionnaireDB";
+$dbname = "QuestionnaireDB2017";
 
 // Get post data
 $postdata = file_get_contents("php://input");

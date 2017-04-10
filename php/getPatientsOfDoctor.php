@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "QuestionnaireDB";
+$dbname = "QuestionnaireDB2017";
 
 class Questionnaire {
   public $qp_ser_num;
